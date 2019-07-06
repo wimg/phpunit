@@ -9,6 +9,10 @@
  */
 namespace PHPUnit\Framework;
 
+use ArrayAccess;
+use Countable;
+use DOMDocument;
+use DOMElement;
 use PHPUnit\Framework\Constraint\ArrayHasKey;
 use PHPUnit\Framework\Constraint\Attribute;
 use PHPUnit\Framework\Constraint\Callback;
@@ -60,6 +64,7 @@ use PHPUnit\Framework\MockObject\Stub\ReturnCallback as ReturnCallbackStub;
 use PHPUnit\Framework\MockObject\Stub\ReturnSelf as ReturnSelfStub;
 use PHPUnit\Framework\MockObject\Stub\ReturnStub;
 use PHPUnit\Framework\MockObject\Stub\ReturnValueMap as ReturnValueMapStub;
+use Throwable;
 
 /**
  * Asserts that an array has a specified key.

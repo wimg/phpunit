@@ -20,6 +20,11 @@ $buffer = '<?php declare(strict_types=1);
  */
 namespace PHPUnit\Framework;
 
+use ArrayAccess;
+use Countable;
+use DOMDocument;
+use DOMElement;
+use Throwable;
 use PHPUnit\Framework\Constraint\Constraint;
 use PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount as AnyInvokedCountMatcher;
 use PHPUnit\Framework\MockObject\Matcher\InvokedAtIndex as InvokedAtIndexMatcher;
